@@ -1,10 +1,3 @@
-/* settings block start */
-document.write('<link rel="stylesheet" href="settings/style.css" type="text/css">');
-document.write('<script type="text/javascript" src="settings/js/jquery.cookies.min.js"></script>');
-document.write('<script type="text/javascript" src="settings/js/main.js"></script>');
-/* settings block end */
-
-
 
 /* browser selection */
 var ie8 = ($.browser.msie && $.browser.version == '8.0') ? true : false;
