@@ -14,10 +14,12 @@
 <script type="text/javascript" src="layout/plugins/html5.js"></script>
 <![endif]-->
 
+<link rel="stylesheet" href="<?php echo base_url();?>layout/bootstrap.css" type="text/css" />
 <link rel="stylesheet" href="<?php echo base_url();?>layout/style.css" type="text/css" />
 <link href="http://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic" rel="stylesheet" type="text/css" />
 <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,700,700italic,800,800italic" rel="stylesheet" type="text/css" />
 
+<script type="text/javascript" src="<?php echo base_url();?>layout/js/bootstrap.js"></script>
 <script type="text/javascript" src="<?php echo base_url();?>layout/js/jquery.js"></script>
 
 <!-- PrettyPhoto start -->

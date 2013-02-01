@@ -72,6 +72,12 @@ $captcha = array(
 <table>
     
         <tr>
+                <td><a class ="btn">School Registration</a></td>
+                <td><a class ="btn">Teacher Registration</a></td>
+		<td><a class ="btn">Student Registration</a></td>
+	</tr>
+    
+        <tr>
 		<td><?php echo form_label('School code', $code['id']); ?></td>
 		<td><?php echo form_input($code); ?></td>
 		<td style="color: red;"><?php echo form_error($code['name']); ?><?php echo isset($errors[$code['name']])?$errors[$code['name']]:''; ?></td>
