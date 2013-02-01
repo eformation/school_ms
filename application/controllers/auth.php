@@ -92,6 +92,7 @@ class Auth extends CI_Controller
 					$data['captcha_html'] = $this->_create_captcha();
 				}
 			}
+                        
 			$this->load->view('auth/login_form', $data);
 		}
 	}
@@ -188,6 +189,8 @@ class Auth extends CI_Controller
 			$data['use_username'] = $use_username;
 			$data['captcha_registration'] = $captcha_registration;
 			$data['use_recaptcha'] = $use_recaptcha;
+                        $data['page_title'] = "Registration Form";
+                        $this->load->view('templates/header',$data);
 			$this->load->view('auth/register_form', $data);
 		}
 	}

@@ -89,6 +89,7 @@
                             <nav class="main_menu">
 				<ul>
                                     <li><a href="<?php echo base_url();?>index.php/welcome">Home<span class="subtext">start here</span></a></li>
+                                    <li><a href="<?php echo base_url();?>index.php/auth/login">Login<span class="subtext">Click to login</span></a></li>
                                     <li><a href="#">Admissions<span class="subtext">online admissions</span></a>
 									
 					<ul>

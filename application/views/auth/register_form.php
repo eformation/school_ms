@@ -1,4 +1,37 @@
 <?php
+
+$code = array(
+	'name'	=> 'code',
+	'id'	=> 'code',
+	'value'	=> set_value('code'),
+	'maxlength'	=> 10,
+	'size'	=> 30,
+);
+
+$idno = array(
+	'name'	=> 'idno',
+	'id'	=> 'idno',
+	'value'	=> set_value('idno'),
+	'maxlength'	=> 10,
+	'size'	=> 30,
+);
+
+$fname = array(
+	'name'	=> 'fname',
+	'id'	=> 'fname',
+	'value'	=> set_value('fname'),
+	'maxlength'	=> 10,
+	'size'	=> 30,
+);
+
+$lname = array(
+	'name'	=> 'lname',
+	'id'	=> 'lname',
+	'value'	=> set_value('lname'),
+	'maxlength'	=> 10,
+	'size'	=> 30,
+);
+
 if ($use_username) {
 	$username = array(
 		'name'	=> 'username',
@@ -37,6 +70,31 @@ $captcha = array(
 ?>
 <?php echo form_open($this->uri->uri_string()); ?>
 <table>
+    
+        <tr>
+		<td><?php echo form_label('School code', $code['id']); ?></td>
+		<td><?php echo form_input($code); ?></td>
+		<td style="color: red;"><?php echo form_error($code['name']); ?><?php echo isset($errors[$code['name']])?$errors[$code['name']]:''; ?></td>
+	</tr>
+    
+        <tr>
+		<td><?php echo form_label('ID No', $idno['id']); ?></td>
+		<td><?php echo form_input($idno); ?></td>
+		<td style="color: red;"><?php echo form_error($idno['name']); ?><?php echo isset($errors[$idno['name']])?$errors[$idno['name']]:''; ?></td>
+	</tr>
+        
+        <tr>
+		<td><?php echo form_label('First Name', $fname['id']); ?></td>
+		<td><?php echo form_input($fname); ?></td>
+		<td style="color: red;"><?php echo form_error($fname['name']); ?><?php echo isset($errors[$fname['name']])?$errors[$fname['name']]:''; ?></td>
+	</tr>
+        
+        <tr>
+		<td><?php echo form_label('Last Name', $lname['id']); ?></td>
+		<td><?php echo form_input($lname); ?></td>
+		<td style="color: red;"><?php echo form_error($lname['name']); ?><?php echo isset($errors[$lname['name']])?$errors[$lname['name']]:''; ?></td>
+	</tr>        
+        
 	<?php if ($use_username) { ?>
 	<tr>
 		<td><?php echo form_label('Username', $username['id']); ?></td>
