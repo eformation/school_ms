@@ -68,13 +68,14 @@ $captcha = array(
 	'maxlength'	=> 8,
 );
 ?>
+
 <?php echo form_open($this->uri->uri_string()); ?>
 
     <div class="tabbable">
         <ul class="nav nav-tabs">
-            <li class="active"><a href="#student" data-toggle="tab">Student</a></li>
-            <li><a href="#teacher" data-toggle="tab">Teacher</a></li>
-            <li><a href="#school" data-toggle="tab">School</a></li>
+            <li class="active student"><a href="#student" data-toggle="tab">Student</a></li>
+            <li class ="teacher"><a href="#teacher" data-toggle="tab">Teacher</a></li>
+            <li class ="school"><a href="#school" data-toggle="tab">School</a></li>
         </ul>
         <div class="tab-content">
             <div class="tab-pane active" id="student"></div>
@@ -169,3 +170,4 @@ $captcha = array(
     </div>
 <?php echo form_submit('register', 'Register'); ?>
 <?php echo form_close(); ?>
+<script type="text/javascript" src="<?php echo base_url();?>layout/js/registration.js"></script>
