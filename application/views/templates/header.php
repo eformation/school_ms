@@ -19,8 +19,10 @@
 <link href="http://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic" rel="stylesheet" type="text/css" />
 <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,700,700italic,800,800italic" rel="stylesheet" type="text/css" />
 
-<script type="text/javascript" src="<?php echo base_url();?>layout/js/bootstrap.js"></script>
+
 <script type="text/javascript" src="<?php echo base_url();?>layout/js/jquery.js"></script>
+<script type="text/javascript" src="<?php echo base_url();?>layout/js/bootstrap.js"></script>
+
 
 <!-- PrettyPhoto start -->
 <link rel="stylesheet" href="<?php echo base_url();?>layout/plugins/prettyphoto/css/prettyPhoto.css" type="text/css" />
@@ -72,7 +74,7 @@
 
 <script type="text/javascript" language ="javascript">
     jQuery(document).ready(function(){
-        var menu_id = <?php if(isset($current_menu)) echo $current_menu-1; else 0;?>;
+        var menu_id = <?php if(isset($current_menu)) echo $current_menu-1; else echo 0;?>;
         jQuery(".main_menu > ul > li").eq(menu_id).addClass("current_page_item");
     });
 </script>
@@ -91,7 +93,11 @@
                             <nav class="main_menu">
 				<ul>
                                     <li><a href="<?php echo base_url();?>index.php/welcome">Home<span class="subtext">start here</span></a></li>
-                                    <li><a href="<?php echo base_url();?>index.php/auth/login">Login<span class="subtext">Click to login</span></a></li>
+                                    <li><a href="<?php echo base_url();?>index.php/auth/login">Login<span class="subtext">Click to login</span></a>
+                                        <ul>
+                                            <li><a href="<?php echo base_url();?>index.php/auth/register">Register</a></li>
+                                        </ul>
+                                    </li>
                                     <li><a href="#">Admissions<span class="subtext">online admissions</span></a>
 									
 					<ul>

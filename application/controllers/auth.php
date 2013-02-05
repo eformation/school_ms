@@ -92,7 +92,8 @@ class Auth extends CI_Controller
 					$data['captcha_html'] = $this->_create_captcha();
 				}
 			}
-                        
+                        $data['page_title'] = "Login";
+                        $this->load->view('templates/header',$data);
 			$this->load->view('auth/login_form', $data);
 		}
 	}
