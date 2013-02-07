@@ -63,6 +63,16 @@ else
 
 $('.nav li a').live('click',function() {
    var function_call_name = $(this).parent().attr('class');
-   function_call_name = function_call_name +"_tab";
-   function_call_name();
+   if(function_call_name == 'teacher active')
+   {
+       teacher_tab();
+   }
+   else if(function_call_name == 'school active')
+   {
+       school_tab();
+   }
+   else
+   {
+       student_tab();
+   }
 });

@@ -582,6 +582,11 @@ class Auth extends CI_Controller
 		}
 		return TRUE;
 	}
+	
+	function validate_school_code()
+	{
+		
+	}
 
 }
 
